@@ -1,2 +1,2 @@
-prinln("HelloWorld");
-prinln("I want to be cool");
+print("HelloWorld");
+println("I just want to be cool.");
