@@ -45,18 +45,41 @@ float imageB = appWidth * 38/64;    //NextButton
 float imageP = appHeight * 48/64;
 float imageWidthi = appWidth * 8/64;
 float imageHeighti = appHeight * 12/64;
+float playX4 = imageB + imageWidth * 2/64; // 6/8
+float playY4 = imageP + imageHeight * 18/64; // 6/8
+float playX5 = imageB + imageWidth * 7/64; // 3/8
+float playY5 = imageP + imageHeight * 11/64; //half
+float playX6 = imageB + imageWidth * 2/64; // 6/8
+float playY6 = imageP + imageHeight * 3/64; // 2/8
+float nextButton = imageB + imageWidth * 7/64; //+ previousButton * 8/64;
+float nextButtons = imageP + imageHeight * 3/64; //+ previousButtons * 8/64;
+float imageNext = imageB + imageWidth * -48.2/64;
+float imageNexts = imageP + imageHeight * -70/64;
 //
 float imageM = appWidth * 48/64;    //FastForward
 float imageN = appHeight * 48/64;
 float imageWidthb = appWidth * 8/64;
 float imageHeightb = appHeight * 12/64;
+float lineX1 = imageM + appWidth * 1.2/64;
+float lineY1 = imageN + appHeight * 1.4/64;
+float lineX2 = imageM + appWidth * 7/64;
+float lineY2 = imageN + appHeight * 10.5/64;
+float lineX3 = imageM + appWidth * 1.2/64;
+float lineY3 = imageN + appHeight * 10.5/64;
+float lineX4 = imageM + appWidth * 6/64;
+float lineY4 = imageN + appHeight * 2.5/64;
+float arrowX1 = lineX2 + appWidth * -1.5/64;
+float arrowY1 = lineY2 + appHeight * -9/64;
+float arrowX2 = lineX2 + appWidth * 6/64;
+float arrowY2 = lineY2 +appHeight* 5/64;
+float arrowX3 = lineX2 + appWidth * -1.5/64;
+float arrowY3 = lineY2  + appHeight * -9/64;
 //
 rect(imageX, imageY, imageWidth, imageHeight);
 ////
 rect(imageR, imageE, imageWidthe, imageHeighte);
 //
 rect(previousButton, previousButtons, previousWidths, previousHeights);
-//
 rect(imageT, imageU, imageWidths, imageHeights);
 //
 rect(imageQ, imageI, imageWidthq, imageHeightq);
@@ -64,7 +87,17 @@ rect(stopButton, stopButtons, imageStop, imageStops);
 rect(playButton, playButtons, imagePlay, imagePlays);
 //
 rect(imageB, imageP, imageWidthi, imageHeighti);
+rect(nextButton, nextButtons, imageNext, imageNexts);
 //
 rect(imageM, imageN, imageWidthb, imageHeightb);
 //
-triangle(playX1, playY1, playX2, playY2, playX3, playY3);
+triangle(playX1, playY1, playX2, playY2, playX3, playY3); //PreviousButton
+//
+triangle(playX4, playY4, playX5, playY5, playX6, playY6);
+//
+line(lineX1, lineY1, lineX2, lineY2);
+//
+line(lineX3, lineY3, lineX4, lineY4);
+//
+triangle(arrowX1, arrowY1, arrowX2, arrowY2, arrowX3, arrowY3);
+//iangle(arrowX4, arrowY4, arrowX5, arrowY5, arrowX6, arrowY6);
