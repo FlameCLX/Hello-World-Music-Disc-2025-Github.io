@@ -1,11 +1,12 @@
 fullScreen(); //Display : Potrait
+//size(500, 250);
 int appWidth = displayWidth;
 int appHeight = displayHeight;
 //
-float imageDivX = appWidth*1/8;
-float imageDivY = appHeight*1/8;
-float imageDivWidth = appWidth*3/4;
-float imageDivHeight = appHeight*3/4;
+float imageDivX = appWidth* 2/8;
+float imageDivY = appHeight* 2/8;
+float imageDivWidth = appWidth* 4/8;
+float imageDivHeight = appHeight* 4/8;
 //Image Aspect Ratio Vars & Algorithm
 //Concatenation
 String upArrow = "../../";
@@ -16,11 +17,12 @@ String imagePathway1 = upArrow + folder + Soccer + fileExtensionJPG;
 println("Soccer Pathway:", imagePathway1);
 //Image Loading
 PImage image1 = loadImage(imagePathway1);
-int imageWidth1 = 250 ;
-int imageHeight1 = 159 ;
+int imageWidth1 = 256 ;
+int imageHeight1 = 160 ;
 //Aspect Ratio
-float image1AspectRatio_GreaterOne = ( imageWidth1 >= imageHeight1 ) ? float(imageWidth1)/float(imageHeight1) : float(imageHeight1)/float(imageWidth1);
+float image1AspectRatio_LessOne = ( imageWidth1 >= imageHeight1 ) ? float(imageWidth1)/float(imageHeight1) : float(imageHeight1)/float(imageWidth1);
 //
+
 /*
 - Hardcoded Greater-Than-One Aspect Ratio, x or / >1 or <1
  - 2D information from Image, Apsect Ratio Number
@@ -30,7 +32,7 @@ float image1AspectRatio_GreaterOne = ( imageWidth1 >= imageHeight1 ) ? float(ima
  */
 //
 float imageWidthAdjusted1 = imageDivWidth;
-float imageHeightAdjusted1 = ( imageWidth1 >= imageDivWidth ) ? imageWidthAdjusted1 * image1AspectRatio_GreaterOne : imageWidthAdjusted1 / image1AspectRatio_GreaterOne;  
+float imageHeightAdjusted1 = ( imageWidth1 >= imageDivWidth ) ? imageWidthAdjusted1 * image1AspectRatio_LessOne : imageWidthAdjusted1 / image1AspectRatio_LessOne;  
 //
 rect(imageDivX, imageDivY, imageDivWidth, imageDivHeight);
 //
