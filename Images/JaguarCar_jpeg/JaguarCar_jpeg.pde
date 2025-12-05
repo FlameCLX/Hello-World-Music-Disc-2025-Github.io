@@ -16,8 +16,8 @@ String imagePathway1 = upArrow + folder + JaguarCar + fileExtensionJPEG;
 println("JaguarCar Pathway:", imagePathway1);
 //Image Loading
 PImage image1 = loadImage(imagePathway1);
-int imageWidth1 = 300 ;
-int imageHeight1 = 190 ;
+int imageWidth1 = 3840 ;
+int imageHeight1 = 1438 ;
 //Aspect Ratio
 float image1AspectRatio_GreaterOne = ( imageWidth1 >= imageHeight1 ) ? float(imageWidth1)/float(imageHeight1) : float(imageHeight1)/float(imageWidth1);
 //

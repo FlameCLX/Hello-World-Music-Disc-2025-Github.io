@@ -2,10 +2,10 @@ fullScreen(); //Display : Potrait
 int appWidth = displayWidth;
 int appHeight = displayHeight;
 //
-float imageDivX = appWidth*1/8;
-float imageDivY = appHeight*1/8;
-float imageDivWidth = appWidth*3/4;
-float imageDivHeight = appHeight*3/4;
+float imageDivX = appWidth* 2/8;
+float imageDivY = appHeight* 2/8;
+float imageDivWidth = appWidth* 2/4;
+float imageDivHeight = appHeight* 2/4;
 //Image Aspect Ratio Vars & Algorithm
 //Concatenation
 String upArrow = "../../";
@@ -16,7 +16,7 @@ String imagePathway1 = upArrow + folder + Solar + fileExtensionJPG;
 println("Solar Pathway:", imagePathway1);
 //Image Loading
 PImage image1 = loadImage(imagePathway1);
-int imageWidth1 = 300 ;
+int imageWidth1 = 304 ;
 int imageHeight1 = 190 ;
 //Aspect Ratio
 float image1AspectRatio_GreaterOne = ( imageWidth1 >= imageHeight1 ) ? float(imageWidth1)/float(imageHeight1) : float(imageHeight1)/float(imageWidth1);
