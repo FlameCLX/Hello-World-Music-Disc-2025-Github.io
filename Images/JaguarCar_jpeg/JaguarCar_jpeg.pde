@@ -11,14 +11,14 @@ float imageDivHeight = appHeight* 3/8;
 //Concatenation
 String upArrow = "../../";
 String folder = "Images/";
-String Jaguar = "Jaguar";
+String JaguarCars = "JaguarCars";
 String fileExtensionJPG = ".jpg";
-String imagePathway1 = upArrow + folder + Jaguar + fileExtensionJPG;
-println("Jaguar Pathway:", imagePathway1);
+String imagePathway1 = upArrow + folder + JaguarCars + fileExtensionJPG;
+println("JaguarCars Pathway:", imagePathway1);
 //Image Loading
 PImage image1 = loadImage(imagePathway1);
 int imageWidth1 = 3840 ;
-int imageHeight1 = 1560 ;
+int imageHeight1 = 1438 ;
 //Aspect Ratio
 float image1AspectRatio_LessOne = ( imageWidth1 >= imageHeight1 ) ? float(imageWidth1)/float(imageHeight1) : float(imageHeight1)/float(imageWidth1);
 //
