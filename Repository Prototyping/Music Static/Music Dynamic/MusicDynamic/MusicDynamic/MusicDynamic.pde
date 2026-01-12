@@ -52,12 +52,7 @@ void setup() {
     println("The Play List or Sound Effects did not load properly");
     printArray(playList);
     printArray(soundEffects);
-    /*
-  println("Music Pathway", musicDirectory);
-     println("Full Music File Pathway", file);
-     */
-  } //End ERROR Check Music and Sound Effect Variables
-  //
+  } 
   //Testing Sound
   playList[currentSong].play();
   //soundEffects[currentSong].play();
