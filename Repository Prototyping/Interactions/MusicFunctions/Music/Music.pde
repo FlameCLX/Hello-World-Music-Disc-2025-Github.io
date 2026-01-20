@@ -1,4 +1,3 @@
-
 /* Music Subprogram
 */
 //
@@ -10,8 +9,13 @@ AudioPlayer[] playList = new AudioPlayer[ numberOfSongs ];
 AudioPlayer[] soundEffects = new AudioPlayer[ numberOfSoundEffects];
 int currentSong = numberOfSongs - numberOfSongs; //ZERO, Math Property
 //
-
-
+import ddf.minim.*;
+import ddf.minim.analysis.*;
+import ddf.minim.effects.*;
+import ddf.minim.signals.*;
+import ddf.minim.spi.*;
+import ddf.minim.ugens.*;
+//
 //Music Loading - STRUCTURED Review
   minim = new Minim(this); //Manditory
   String upArrow = "../../../";
